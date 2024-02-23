@@ -1,0 +1,123 @@
+:root{
+ --back1:#072063;
+ --back2:#251560;
+ --back3:#311260;
+ --back4:#3a0d5e;
+ --back5:#420b5f;
+ --back6:#4a085f;
+ --input:#edeef0;
+ --add:#ff5845;
+ --mark:#919191;
+ --text:#022155
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: white;
+  padding: 40px 30px;
+  max-width: 480px;
+  margin: auto;
+  border-radius: 12px;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  margin-bottom: 30px
+}
+.container .txt{
+  position: relative;
+}
+.txt h2{
+  color: var(--text);
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.txt h2 img{
+  width: 42px;
+  margin-bottom: -13px;
+  margin-left: 7px;
+}
+.txt textarea{
+  resize:none;
+  padding: 12px 30px 5px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  background-color: var(--input);
+  width: 400px !important;
+  max-width: 400px !important;
+  display: block;
+  height: auto !important;
+  font-size: 15px;
+}
+.txt button{
+  position: absolute;
+  right: 0px;
+  bottom: -60px;
+  padding: 13px 22px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--add);
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+.txt button:hover{
+  background-color: hsl(6deg 73% 54%)
+}
+ul{
+  list-style: none;
+  margin-top: 80px;
+}
+.task{
+  display: flex;
+  margin-bottom: 12px;
+  background-color: var(--text);
+  color: white;
+  border-radius: 6px;
+  padding: 10px;
+}
+.task p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
+}
+.task .image{
+  margin-left: auto;
+  margin-top: auto;
+  display: flex;
+  padding-left: 12px;
+}
+.update{
+  right: 100px !important;
+}
+.task img{
+  width: 18px;
+  cursor: pointer;
+  height: 18px;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+.complete + p {
+  text-decoration: line-through;
+  opacity: .5;
+}
+@media(max-width:375px){
+  .container{
+    max-width: 300px;
+    margin: 70px auto 20px;
+    padding: 20px;
+}
+
+.txt textarea {
+  width: 270px !important;
+}
+}
